@@ -1,0 +1,472 @@
+Biome,Year,Area
+Barren,-0,47987.150557240755
+Barren,1000,30581.893979999106
+Barren,2000,30581.893979999106
+Barren,3000,30581.893979999106
+Barren,4000,30581.893979999106
+Barren,5000,30581.893979999106
+Barren,6000,30581.893979999106
+Barren,7000,30581.893979999106
+Barren,8000,30581.893979999106
+Barren,9000,30581.893979999106
+Barren,10000,30581.893979999106
+Barren,11000,30581.893979999106
+Barren,12000,30581.893979999106
+Barren,13000,30581.893979999106
+Barren,14000,30581.893979999106
+Barren,15000,30581.893979999106
+Barren,16000,30581.893979999106
+Barren,17000,33581.84382503911
+Barren,18000,53677.632574822936
+Barren,19000,78699.80214093818
+Barren,20000,64999.25335481859
+Barren,21000,69524.60535098684
+Cool conifer forest,14000,13818.27509091167
+Cool conifer forest,15000,11662.474304960297
+Cool conifer forest,16000,27327.190033144387
+Cool mixed forest,16000,3880.914318738749
+Cushion forb lichen moss tundra,11000,1781.7423106289764
+Cushion forb lichen moss tundra,12000,1781.7423106289764
+Cushion forb lichen moss tundra,13000,1781.7423106289764
+Cushion forb lichen moss tundra,14000,4781.6921556689795
+Cushion forb lichen moss tundra,15000,21195.888110691085
+Cushion forb lichen moss tundra,16000,37899.89474383414
+Cushion forb lichen moss tundra,17000,37590.94532290901
+Cushion forb lichen moss tundra,18000,34899.94489879414
+Cushion forb lichen moss tundra,19000,34899.94489879414
+Cushion forb lichen moss tundra,20000,34899.94489879414
+Cushion forb lichen moss tundra,21000,37590.94532290901
+Deciduous taiga/montane forest,-0,5635.481965537145
+Deciduous taiga/montane forest,1000,8401.085984224888
+Deciduous taiga/montane forest,2000,2774.8452746228595
+Deciduous taiga/montane forest,3000,5571.773236766408
+Deciduous taiga/montane forest,4000,5582.9197386553415
+Deciduous taiga/montane forest,5000,5336.163877301171
+Deciduous taiga/montane forest,17000,4412.721781801916
+Deciduous taiga/montane forest,18000,7380.534543204807
+Deciduous taiga/montane forest,21000,1930.145453203323
+Desert,-0,932863.839742827
+Desert,1000,954199.6996274428
+Desert,2000,998032.361233023
+Desert,3000,968943.449763067
+Desert,4000,1033233.6726177034
+Desert,5000,956677.7386173519
+Desert,6000,1015849.241693202
+Desert,7000,1007149.3273787404
+Desert,8000,1053384.1854965365
+Desert,9000,1051314.8713983945
+Desert,10000,1044613.1168500416
+Desert,11000,953794.6661172687
+Desert,12000,1038496.0979113574
+Desert,13000,1070443.7031788093
+Desert,14000,1025378.735752036
+Desert,15000,988273.2379221496
+Desert,16000,1010748.877124476
+Desert,17000,1116407.700719753
+Desert,18000,1165175.9442883553
+Desert,19000,1094340.1345431132
+Desert,20000,1198151.6137527348
+Desert,21000,1109717.1134322411
+Dwarf shrub tundra,-0,13268.239060951953
+Dwarf shrub tundra,1000,21298.582269334373
+Dwarf shrub tundra,2000,13205.266993396694
+Dwarf shrub tundra,3000,10540.06663731941
+Dwarf shrub tundra,4000,13165.05749750806
+Dwarf shrub tundra,5000,13205.266993396694
+Dwarf shrub tundra,6000,21093.44440713646
+Dwarf shrub tundra,7000,10582.653839949231
+Dwarf shrub tundra,8000,13151.25570587866
+Dwarf shrub tundra,9000,18495.864630722874
+Dwarf shrub tundra,10000,6954.959868921994
+Dwarf shrub tundra,11000,15830.664274645593
+Dwarf shrub tundra,12000,4357.38009250841
+Dwarf shrub tundra,13000,12190.74964525557
+Dwarf shrub tundra,14000,14856.350265260682
+Dwarf shrub tundra,15000,26367.006818208345
+Dwarf shrub tundra,16000,48845.423110694646
+Dwarf shrub tundra,17000,85557.44026530274
+Dwarf shrub tundra,18000,96814.464629016
+Dwarf shrub tundra,19000,88728.05139034506
+Dwarf shrub tundra,20000,106055.93534674373
+Dwarf shrub tundra,21000,99756.97778567832
+Evegreen taiga/montane forest,-0,16357.257209866184
+Evegreen taiga/montane forest,1000,18982.248070054833
+Evegreen taiga/montane forest,2000,48328.145557237294
+Evegreen taiga/montane forest,3000,51044.43865624384
+Evegreen taiga/montane forest,4000,36023.34328354128
+Evegreen taiga/montane forest,5000,20128.17657716099
+Evegreen taiga/montane forest,6000,35572.23677983383
+Evegreen taiga/montane forest,7000,11835.334722281803
+Evegreen taiga/montane forest,8000,13847.074105027024
+Evegreen taiga/montane forest,9000,16548.341274451457
+Evegreen taiga/montane forest,10000,16588.534398837794
+Evegreen taiga/montane forest,11000,11769.317790563211
+Evegreen taiga/montane forest,12000,16992.83654086651
+Evegreen taiga/montane forest,13000,29626.543588421697
+Evegreen taiga/montane forest,14000,18625.196019107378
+Evegreen taiga/montane forest,15000,75974.33552494035
+Evegreen taiga/montane forest,16000,102268.26463820983
+Evegreen taiga/montane forest,17000,42757.43586118607
+Evegreen taiga/montane forest,18000,41460.914269074434
+Evegreen taiga/montane forest,19000,43605.57874158648
+Evegreen taiga/montane forest,20000,51524.12791296358
+Evegreen taiga/montane forest,21000,54604.037294297494
+Land ice,-0,46945.50635362325
+Land ice,1000,46945.50635362325
+Land ice,2000,46945.50635362325
+Land ice,3000,46945.50635362325
+Land ice,4000,46945.50635362325
+Land ice,5000,46945.50635362325
+Land ice,6000,46945.50635362325
+Land ice,7000,46945.50635362325
+Land ice,8000,46945.50635362325
+Land ice,9000,46945.50635362325
+Land ice,10000,46945.50635362325
+Land ice,11000,46945.50635362325
+Land ice,12000,46945.50635362325
+Land ice,13000,46945.50635362325
+Land ice,14000,46945.50635362325
+Land ice,15000,46945.50635362325
+Land ice,16000,46945.50635362325
+Land ice,17000,768486.11953167
+Land ice,18000,768486.11953167
+Land ice,19000,768486.11953167
+Land ice,20000,768486.11953167
+Land ice,21000,768486.11953167
+Open conifer woodland,-0,53676.67202918031
+Open conifer woodland,1000,68294.18229058286
+Open conifer woodland,2000,66460.52518856074
+Open conifer woodland,3000,88691.14778446175
+Open conifer woodland,4000,79938.8252183427
+Open conifer woodland,5000,76030.35705953486
+Open conifer woodland,6000,90694.70116562204
+Open conifer woodland,7000,99543.46856013204
+Open conifer woodland,8000,88171.89455425685
+Open conifer woodland,9000,107307.96506562781
+Open conifer woodland,10000,107457.3959351146
+Open conifer woodland,11000,108213.01290857719
+Open conifer woodland,12000,118070.07848488168
+Open conifer woodland,13000,104901.71279147046
+Open conifer woodland,14000,95252.92563749423
+Open conifer woodland,15000,80315.18974433288
+Open conifer woodland,16000,91646.29579811088
+Open conifer woodland,17000,78126.47023905933
+Open conifer woodland,18000,78468.6758779375
+Open conifer woodland,19000,75397.99636204066
+Open conifer woodland,20000,72503.64104966121
+Open conifer woodland,21000,66438.21774250499
+Prostrate shrub tundra,7000,2568.601865929429
+Prostrate shrub tundra,9000,5151.595411153552
+Prostrate shrub tundra,10000,3585.1067683974175
+Prostrate shrub tundra,11000,6954.959868921994
+Prostrate shrub tundra,12000,10540.06663731941
+Prostrate shrub tundra,13000,10540.06663731941
+Prostrate shrub tundra,14000,10540.06663731941
+Prostrate shrub tundra,15000,23086.874904751374
+Prostrate shrub tundra,16000,36618.926911332244
+Prostrate shrub tundra,17000,48411.67968215966
+Prostrate shrub tundra,18000,45181.88701494808
+Prostrate shrub tundra,19000,45827.288832126316
+Prostrate shrub tundra,20000,42584.69739094882
+Prostrate shrub tundra,21000,53538.452947946
+Shrub tundra,-0,40525.49048512529
+Shrub tundra,1000,50908.473285495915
+Shrub tundra,2000,30156.665604706213
+Shrub tundra,3000,34277.68929300577
+Shrub tundra,4000,31876.9853462031
+Shrub tundra,5000,34201.434665741304
+Shrub tundra,6000,26356.63679918706
+Shrub tundra,7000,51546.24901033595
+Shrub tundra,8000,37897.57969964498
+Shrub tundra,9000,27002.752193985507
+Shrub tundra,10000,20669.736214514785
+Shrub tundra,11000,37490.72527533518
+Shrub tundra,12000,78113.41873326723
+Shrub tundra,13000,79815.61772021023
+Shrub tundra,14000,94975.39009634564
+Shrub tundra,15000,134595.3900642425
+Shrub tundra,16000,238390.79846428573
+Shrub tundra,17000,101918.65919341217
+Shrub tundra,18000,103844.51865072918
+Shrub tundra,19000,127659.63015635144
+Shrub tundra,20000,126114.7568786286
+Shrub tundra,21000,127164.96624777323
+Steppe tundra,-0,636814.0526177206
+Steppe tundra,1000,615624.5812628785
+Steppe tundra,2000,645388.3652836757
+Steppe tundra,3000,640300.9454200057
+Steppe tundra,4000,661367.718672586
+Steppe tundra,5000,640979.8210766979
+Steppe tundra,6000,654045.6793999845
+Steppe tundra,7000,721021.357956193
+Steppe tundra,8000,747968.6017242105
+Steppe tundra,9000,694641.42209427
+Steppe tundra,10000,787886.7369080838
+Steppe tundra,11000,805308.588777717
+Steppe tundra,12000,861821.9740045565
+Steppe tundra,13000,907529.8737176373
+Steppe tundra,14000,995754.6697459511
+Steppe tundra,15000,907714.608646565
+Steppe tundra,16000,888115.5772137028
+Steppe tundra,17000,602260.729668756
+Steppe tundra,18000,598662.2451655541
+Steppe tundra,19000,570444.8864458166
+Steppe tundra,20000,559127.0673553381
+Steppe tundra,21000,547356.5149810659
+Temperate conifer forest,-0,940008.8593274704
+Temperate conifer forest,1000,903238.8258160684
+Temperate conifer forest,2000,856351.3824704869
+Temperate conifer forest,3000,865472.2753802037
+Temperate conifer forest,4000,1004248.4096909928
+Temperate conifer forest,5000,986090.0433295481
+Temperate conifer forest,6000,982815.3079601773
+Temperate conifer forest,7000,1015415.433394457
+Temperate conifer forest,8000,993216.0615354978
+Temperate conifer forest,9000,1077885.4357815278
+Temperate conifer forest,10000,996013.2857767931
+Temperate conifer forest,11000,1117078.8677552629
+Temperate conifer forest,12000,1325271.029935293
+Temperate conifer forest,13000,1226242.9873311378
+Temperate conifer forest,14000,1233378.8491040757
+Temperate conifer forest,15000,1153542.4744978591
+Temperate conifer forest,16000,1130366.5777001819
+Temperate conifer forest,17000,1060567.0542139863
+Temperate conifer forest,18000,992301.6356218896
+Temperate conifer forest,19000,887602.6737379017
+Temperate conifer forest,20000,998130.2330132482
+Temperate conifer forest,21000,1073984.5623072232
+Temperate grassland,-0,18066.628976285945
+Temperate grassland,1000,30154.565371800472
+Temperate grassland,2000,20760.0103202237
+Temperate grassland,3000,16665.099555369823
+Temperate grassland,4000,27257.2249796508
+Temperate grassland,5000,7898.3606140790025
+Temperate grassland,6000,2876.754713731812
+Temperate grassland,8000,4956.219931584812
+Temperate grassland,9000,5032.98259825654
+Temperate grassland,10000,5706.512456343731
+Temperate grassland,11000,15526.639077969197
+Temperate grassland,13000,5272.250428020638
+Temperate grassland,14000,2430.45263619625
+Temperate grassland,15000,36489.37866819912
+Temperate grassland,16000,33819.437534246594
+Temperate grassland,17000,7241.946627056061
+Temperate grassland,19000,7662.734549794127
+Temperate grassland,20000,4828.1468685771
+Temperate grassland,21000,27062.31003985227
+Temperate sclerophyll woodland,-0,791749.7202165613
+Temperate sclerophyll woodland,1000,818040.4006783119
+Temperate sclerophyll woodland,2000,834374.5051793609
+Temperate sclerophyll woodland,3000,804661.4746163423
+Temperate sclerophyll woodland,4000,808271.598419862
+Temperate sclerophyll woodland,5000,865175.7077990564
+Temperate sclerophyll woodland,6000,851287.3694400776
+Temperate sclerophyll woodland,7000,751955.4794030099
+Temperate sclerophyll woodland,8000,739673.0652405388
+Temperate sclerophyll woodland,9000,889762.9381236313
+Temperate sclerophyll woodland,10000,778151.468371988
+Temperate sclerophyll woodland,11000,802658.8862426088
+Temperate sclerophyll woodland,12000,681785.3542031538
+Temperate sclerophyll woodland,13000,787247.2611753772
+Temperate sclerophyll woodland,14000,708886.3773554168
+Temperate sclerophyll woodland,15000,907347.4415181222
+Temperate sclerophyll woodland,16000,948203.511962501
+Temperate sclerophyll woodland,17000,1066389.607786007
+Temperate sclerophyll woodland,18000,995074.9038634523
+Temperate sclerophyll woodland,19000,1257785.2355405474
+Temperate sclerophyll woodland,20000,1067410.0552564266
+Temperate sclerophyll woodland,21000,1074423.3299372122
+Temperate xerophytic shrubland,-0,127400.45398406578
+Temperate xerophytic shrubland,1000,156656.90110751012
+Temperate xerophytic shrubland,2000,139304.90738424848
+Temperate xerophytic shrubland,3000,238722.76889582386
+Temperate xerophytic shrubland,4000,177433.00363112695
+Temperate xerophytic shrubland,5000,210288.89602916717
+Temperate xerophytic shrubland,6000,224013.619523511
+Temperate xerophytic shrubland,7000,201472.56802606615
+Temperate xerophytic shrubland,8000,174582.8058183692
+Temperate xerophytic shrubland,9000,206027.28907790885
+Temperate xerophytic shrubland,10000,192870.96147609
+Temperate xerophytic shrubland,11000,160635.5724601538
+Temperate xerophytic shrubland,12000,242906.4430300674
+Temperate xerophytic shrubland,13000,225966.99630363303
+Temperate xerophytic shrubland,14000,233161.76062951479
+Temperate xerophytic shrubland,15000,295580.9025813574
+Temperate xerophytic shrubland,16000,241523.05654629425
+Temperate xerophytic shrubland,17000,219045.91600006403
+Temperate xerophytic shrubland,18000,209812.76493089614
+Temperate xerophytic shrubland,19000,266350.7782869472
+Temperate xerophytic shrubland,20000,227277.4943439559
+Temperate xerophytic shrubland,21000,268777.23425768124
+Tropical deciduous forest/woodland,-0,2329308.107199128
+Tropical deciduous forest/woodland,1000,2567631.876640199
+Tropical deciduous forest/woodland,2000,2573331.5602795444
+Tropical deciduous forest/woodland,3000,2146472.4778337996
+Tropical deciduous forest/woodland,4000,2089059.4808103894
+Tropical deciduous forest/woodland,5000,2244045.6736715287
+Tropical deciduous forest/woodland,6000,2201608.730314918
+Tropical deciduous forest/woodland,7000,2014837.6850070404
+Tropical deciduous forest/woodland,8000,1874900.919759614
+Tropical deciduous forest/woodland,9000,2164675.51472367
+Tropical deciduous forest/woodland,10000,1948226.1401889445
+Tropical deciduous forest/woodland,11000,1957252.5210071057
+Tropical deciduous forest/woodland,12000,1663051.6140065396
+Tropical deciduous forest/woodland,13000,1676877.635396261
+Tropical deciduous forest/woodland,14000,1855330.3309243936
+Tropical deciduous forest/woodland,15000,1898443.9345600947
+Tropical deciduous forest/woodland,16000,1224686.4389903778
+Tropical deciduous forest/woodland,17000,511442.69201808504
+Tropical deciduous forest/woodland,18000,466209.9305083244
+Tropical deciduous forest/woodland,19000,393033.2111115851
+Tropical deciduous forest/woodland,20000,398642.2634709978
+Tropical deciduous forest/woodland,21000,377879.10321313323
+Tropical evergreen forest,-0,4238986.865070089
+Tropical evergreen forest,1000,4100289.6279132823
+Tropical evergreen forest,2000,4094546.2530899714
+Tropical evergreen forest,3000,4189184.442486033
+Tropical evergreen forest,4000,4207867.735774219
+Tropical evergreen forest,5000,3677452.822672752
+Tropical evergreen forest,6000,3844413.5700364597
+Tropical evergreen forest,7000,4235759.871702139
+Tropical evergreen forest,8000,4210270.790642877
+Tropical evergreen forest,9000,4157236.9757926753
+Tropical evergreen forest,10000,4067280.30290926
+Tropical evergreen forest,11000,4365981.284136197
+Tropical evergreen forest,12000,4297483.785132675
+Tropical evergreen forest,13000,4198301.499843979
+Tropical evergreen forest,14000,4203925.930276298
+Tropical evergreen forest,15000,3733531.8616684927
+Tropical evergreen forest,16000,3790847.4383445545
+Tropical evergreen forest,17000,2800011.7977435277
+Tropical evergreen forest,18000,2567758.4865429234
+Tropical evergreen forest,19000,2447254.8978198264
+Tropical evergreen forest,20000,2479333.560136441
+Tropical evergreen forest,21000,2370994.70039159
+Tropical grassland,1000,2347.194364288858
+Tropical grassland,2000,2919.622193976794
+Tropical grassland,3000,8809.63030694179
+Tropical grassland,4000,11356.782328425426
+Tropical grassland,5000,5847.1604942796
+Tropical grassland,6000,20088.78449371325
+Tropical grassland,7000,19267.793843187777
+Tropical grassland,8000,8809.63030694179
+Tropical grassland,9000,8766.782688256393
+Tropical grassland,10000,8430.154039503723
+Tropical grassland,11000,5063.499700665599
+Tropical grassland,12000,2919.622193976794
+Tropical grassland,13000,5623.217944121045
+Tropical grassland,14000,5300.663548640355
+Tropical grassland,15000,2638.5939952018944
+Tropical grassland,17000,3035.5010181492976
+Tropical grassland,18000,17528.239236481175
+Tropical grassland,19000,6009.470337188141
+Tropical savanna,-0,2092662.387661284
+Tropical savanna,1000,2083941.2223998997
+Tropical savanna,2000,2106564.6015261407
+Tropical savanna,3000,2167564.9852623343
+Tropical savanna,4000,2263117.9716288056
+Tropical savanna,5000,3043556.3186687985
+Tropical savanna,6000,2554837.107551087
+Tropical savanna,7000,2270031.686841456
+Tropical savanna,8000,2454548.544304258
+Tropical savanna,9000,2378098.4871209464
+Tropical savanna,10000,2828461.8630021373
+Tropical savanna,11000,2475942.0203882447
+Tropical savanna,12000,2423614.4253246514
+Tropical savanna,13000,2442740.4319616784
+Tropical savanna,14000,2401449.2206292567
+Tropical savanna,15000,1618965.0547780532
+Tropical savanna,16000,571498.0457568461
+Tropical savanna,17000,157339.18033596702
+Tropical savanna,18000,91408.15754824299
+Tropical savanna,19000,48688.29212744404
+Tropical savanna,20000,33336.17515072623
+Tropical savanna,21000,76114.71103302472
+Tropical semi-deciduous forest,-0,2927412.1664590742
+Tropical semi-deciduous forest,1000,2670067.5981600783
+Tropical semi-deciduous forest,2000,2678916.4983854373
+Tropical semi-deciduous forest,3000,2771426.8979754904
+Tropical semi-deciduous forest,4000,2619330.5058637443
+Tropical semi-deciduous forest,5000,2186686.6134054065
+Tropical semi-deciduous forest,6000,2494214.848200639
+Tropical semi-deciduous forest,7000,2500510.0334555414
+Tropical semi-deciduous forest,8000,2576782.353616569
+Tropical semi-deciduous forest,9000,2784576.199837862
+Tropical semi-deciduous forest,10000,2531574.577243957
+Tropical semi-deciduous forest,11000,2855718.6187753654
+Tropical semi-deciduous forest,12000,2734432.3849350456
+Tropical semi-deciduous forest,13000,2605836.064469347
+Tropical semi-deciduous forest,14000,2465594.5561057925
+Tropical semi-deciduous forest,15000,2313197.942143479
+Tropical semi-deciduous forest,16000,1006076.8175885632
+Tropical semi-deciduous forest,17000,612392.5837961975
+Tropical semi-deciduous forest,18000,513109.6254421506
+Tropical semi-deciduous forest,19000,497918.3438990023
+Tropical semi-deciduous forest,20000,458497.1994577189
+Tropical semi-deciduous forest,21000,503415.9287954193
+Tropical xerophytic shrubland,-0,2111775.467933191
+Tropical xerophytic shrubland,1000,2146366.502986719
+Tropical xerophytic shrubland,2000,2215010.209946939
+Tropical xerophytic shrubland,3000,2411589.330267577
+Tropical xerophytic shrubland,4000,2454609.8689454896
+Tropical xerophytic shrubland,5000,2527899.7908585393
+Tropical xerophytic shrubland,6000,2553563.9339870824
+Tropical xerophytic shrubland,7000,2769538.947655123
+Tropical xerophytic shrubland,8000,2729926.864124356
+Tropical xerophytic shrubland,9000,2109083.9687034464
+Tropical xerophytic shrubland,10000,2462718.018669035
+Tropical xerophytic shrubland,11000,1994386.5640470728
+Tropical xerophytic shrubland,12000,2349573.21918273
+Tropical xerophytic shrubland,13000,2493348.488974178
+Tropical xerophytic shrubland,14000,2345740.0654945136
+Tropical xerophytic shrubland,15000,3376403.7479209853
+Tropical xerophytic shrubland,16000,5987286.229331931
+Tropical xerophytic shrubland,17000,8411530.549855217
+Tropical xerophytic shrubland,18000,8840417.473123116
+Tropical xerophytic shrubland,19000,9107119.995734148
+Tropical xerophytic shrubland,20000,8971659.96714154
+Tropical xerophytic shrubland,21000,9167669.862961557
+Warm mixed forest,-0,746803.1927417002
+Warm mixed forest,1000,850769.1734713322
+Warm mixed forest,2000,791520.313314239
+Warm mixed forest,3000,743231.43119358
+Warm mixed forest,4000,667211.9951693809
+Warm mixed forest,5000,711738.9033837798
+Warm mixed forest,6000,673118.768712937
+Warm mixed forest,7000,603569.0362025809
+Warm mixed forest,8000,577726.0604727208
+Warm mixed forest,9000,631041.499307578
+Warm mixed forest,10000,564764.6728368361
+Warm mixed forest,11000,730828.6117228407
+Warm mixed forest,12000,609439.08494665
+Warm mixed forest,13000,616852.651113506
+Warm mixed forest,14000,808337.5271263331
+Warm mixed forest,15000,949225.2132583816
+Warm mixed forest,16000,1147501.120256747
+Warm mixed forest,17000,1035623.0580042675
+Warm mixed forest,18000,1128411.450599193
+Warm mixed forest,19000,970883.1167212933
+Warm mixed forest,20000,1154835.9305965258
+Warm mixed forest,21000,941968.3438814906
+Water bodies,-0,4928.01992605568
+Water bodies,1000,4928.01992605568
+Water bodies,2000,17129.20174486778
+Water bodies,3000,31693.553657147007
+Water bodies,4000,37818.23714083113
+Water bodies,5000,46918.172904830535
+Water bodies,6000,58595.952986592085
+Water bodies,7000,87712.29300957294
+Water bodies,8000,96827.39458723878
+Water bodies,9000,167106.04301811356
+Water bodies,10000,287777.6417325002
+Water bodies,11000,468489.0967332708
+Water bodies,12000,623326.2058318328
+Water bodies,13000,780673.8964256583
+Water bodies,14000,943073.7355494852
+Water bodies,15000,1087262.4018503455
+Water bodies,16000,1224430.4648078831
+Water bodies,17000,1319265.3795014138
+Water bodies,18000,1372860.6357990548
+Water bodies,19000,1396178.4126801684
+Water bodies,20000,1388319.0216677692
+Water bodies,21000,1414068.6530655131
