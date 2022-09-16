@@ -1,0 +1,133 @@
+---
+title: "Extinction risk through climate change in Megafauna"
+author: "Natalia Villavicencio, Derek Corcoran and Pablo Marquet"
+output:
+  bookdown::pdf_document2:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    toc: false
+bibliography: Biblio.bib
+header-includes:
+    - \usepackage[round]{natbib}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, eval.after = "fig.cap")
+library(kableExtra)
+library(ggrepel)
+library(readxl)
+library(sf)
+library(tidyverse)
+
+DF <- read_excel("PaleoNicheModeling/BodyMassSDM2020.xlsx", 
+                   sheet = "Summary") %>% 
+        rename(Mass = `Body mass (kg)`, Feeding = Diet) %>% 
+        mutate(Minimum = 3876, Minimum_Lo = 5095) %>%
+        # Herbivores = 2.71*(Mass^1.02)*0.01, 
+        # Omnivores = 3.4*(Mass^0.92)*0.01,
+        # Carniivores = 137*(Mass^1.37)*0.01,
+   
+        mutate(HomeRange = case_when(Feeding == "Herbivore" ~ 2.71*(Mass^1.02)*0.01,
+                                     Feeding == "Omnivore" ~ 3.4*(Mass^0.92)*0.01,
+                                     Feeding == "Carnivore" ~ 137*(Mass^1.37)*0.01),
+               MinimumArea = Minimum*HomeRange, MinimumAreaLo = Minimum_Lo*HomeRange, Species = str_replace_all(Species, pattern = " ", replacement = "_")) %>% 
+        dplyr::select(-Minimum, -Minimum_Lo, -Reference) %>% 
+        arrange(Species) %>% 
+    mutate(Species = str_replace_all(Species, "Odocoileus_virginanus", "Odocoileus_virginianus")) %>%
+  mutate(Species = str_replace_all(Species,"Tapirus_pichanque", "Tapirus_pinchaque")) %>% 
+  mutate(Species = str_replace_all(Species,"Tapirus_bairdii", "Tapirus_bairdi")) %>% mutate(Species =str_replace_all(Species, "_", " "))
+
+
+colnames(DF) <- c("Order", "Family","Species", "State","Feeding","Mass [Kg]", "Estimated home range [Km^2/ind]", "Estimated minimum viable area [Km^2]", "Higher interval of the minimum viable area [Km^2]")
+
+Areas <- read_rds("Areas.rds")
+```
+
+# Methods
+
+## Metrics of ectinction
+
+In order to estimate if the predicted range of a species was low enough for a species to become extinct we estimated the Minimum Viable Area for each species. In order to do that we started by calculating the individual Home Range of a Species as shown in equation \@ref(eq:HomeRange) modified from [@lindstedt1986home] to calculate it in $Km^2$. 
+
+\begin{equation}
+\begin{aligned}
+  HR_{Herb} &= 0.0271 \times M^{1.02} \\
+  HR_{Omni} &= 0.034\times M^{0.92} \\
+  HR_{Carn} &= 1.37\times M^{1.37}
+  (\#eq:HomeRange)
+\end{aligned}
+\end{equation}
+
+This equation diferienciates between Herbivores, Omnivores and Carnivores, where at the same size Carnivores need much larger range. After that we since we know the area neede by one individual we assume that the Minimum Viable Area (MVA hereafter) is calculated by multipling the Home Range according to equation \@ref(eq:HomeRange),by the Minimum Viable Population (MVP hereafter), as is show in equation \@ref(eq:MVA), the result of this equation is the $Km^2$ needed for a species to persist. For MVP we used two estimates from [@traill2007minimum], where it was estimated that the MVP for most vertebrates was 4,169 individuals, but in order to get a more strict estimate we also used the higher estimation of the 95% confidence interval of 5,129 to make more conservative estimates.
+
+\begin{equation}
+  MVA = MVP*HR_{Feed}
+  (\#eq:MVA)
+\end{equation}
+
+Since the Estimated MVA ranged from `r prettyNum(round(min(DF["Estimated minimum viable area [Km^2]"]),0), big.mark = ",")`, to `r prettyNum(round(max(DF["Estimated minimum viable area [Km^2]"]),0), big.mark = ",")` $Km^2$ we decided to standardize the MVAs as Number of Viable Areas (NVA here after) to make easier to compare between species, the calculation of NVA is shown in equation \@ref(eq:MVA),
+
+\begin{equation}
+  NVA = \frac{A}{MVA}
+  (\#eq:NVA)
+\end{equation}
+
+## Species occurences
+
+**[[Naty]]**
+We rounded the species ocurrences to the nearest decade
+  
+## Species Distribution Modeling
+
+We downladed average high and low monthly temperature and average monthly precipitation represented as a difference from present conditions using PaleoView Software [@fordham2017paleoview] for the period from 21 kyr BP to the present for South America, using worlclim's version 1.4 as current conditions [@hijmans2005very] instead of the newer 2.0 version [@fick2017worldclim] since it has 1975 as reference to calculate differences in climate, the same as Paleoview. Then we applied a modified version of the detla method to this layers to consider the changes in sea level [@schmatz2015gridded], using prior works to estimate sealevels [@fleming1998refining, @milne2005modelling], and using the gebco bathymetry layers in order to estimate the coastline for each time-slice [@weatherall2015new]. After downscaling the layers a 2.5 minute resolution (approximately 5 $Km^2$) we used the biovars of the dismo package [@Hijman_dismo] to generate bioclimatic layers. The code for the downscaling method can be found at [@derek_corcoran_barrios_2020_4016075]
+
+The we used the bioclimatic variables to build the species distribution models following (Phillips et al., 2006; Elith et al., 2011), using the regularization method to avoid overfitting (Allouche et al.,2006; Hastie et al., 2009; Merow et al., 2013). This method allows machine learning algorithm techniques to decide which biolclimatic variables are important to model the distribution of the different species analyzed. The variable selected for each of the species we used in this study can be found in the Supplementary Material section.
+  
+
+# Results
+
+In figure \@ref(fig:NVAGraph), we can see the number of viable areas (NVA hereafter) estimated for each species as a solid line across time, and the lower NVA as a semitransparent area, each time a species NVA drops bellow one (red dashed line),a species is estimated to be extinct. If we look at the estimation, only `r Areas %>% dplyr::filter(NVA < 1) %>% pull(Species) %>% unique() %>% length()` of the `r Areas  %>% pull(Species) %>% unique() %>% length()` species are predicted to be extinct. The species that should become extinct are `r paste(paste((Areas %>% dplyr::filter(NVA < 1) %>% pull(Species) %>% str_replace_all("_", " ") %>% unique)[1:(length(Areas %>% dplyr::filter(NVA < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique) -1)], collapse = ", "),(Areas %>% dplyr::filter(NVA < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique)[length((Areas %>% dplyr::filter(NVA < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique))], sep = " and ")`, when we look at the lower estimate interval that number icreases to `r Areas %>% dplyr::filter(NVA_Lo < 1) %>% pull(Species) %>% unique() %>% length()`, where the species predicted to become extinct are `r paste(paste((Areas %>% dplyr::filter(NVA_Lo < 1) %>% pull(Species) %>% str_replace_all("_", " ") %>% unique)[1:(length(Areas %>% dplyr::filter(NVA_Lo < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique) -1)], collapse = ", "),(Areas %>% dplyr::filter(NVA_Lo < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique)[length((Areas %>% dplyr::filter(NVA_Lo < 1) %>% pull(Species)%>% str_replace_all("_", " ") %>% unique))], sep = " and ")`
+
+
+
+```{r, NVAGraph, fig.cap= "graph showing the estimation of Number of viable areas for each species and the area showing the lower Estimate of number of viable areas by feeding habits, if a species goes bellow the red dotted line, they are predicted to be extinct"}
+ggplot(Areas, aes(x = year, y = NVA, group = Species)) + geom_ribbon(aes(fill = Species, ymin = NVA_Lo, ymax = NVA), alpha = 0.5) + geom_path(aes(color = Species)) + facet_wrap(~Family, scales = "free_y") + theme_bw() + geom_hline(yintercept = 1, lty = 3, color = "red") + theme(legend.position = "none") + labs(x = "Years before present", y = "Number of Viable Areas") + scale_x_continuous(guide = guide_axis(check.overlap = TRUE))
+```
+
+# Discusion
+
+# Suplementary materials
+
+## Table with all the modeled species
+
+```{r TablaEspecies}
+kable(DF, format.args = list(big.mark = ","), digits = 0, longtable = T, booktabs = T, caption = "Al the modeled species and their mass, estimated Home Range, and the estimated Minimum Viable Area and the Higher interval estimation of the Minimum viable Area") %>% kable_styling(full_width = F,latex_options =c("hold_position", "repeat_header", "scale_down"), position = "center") %>% column_spec(1, width = "13em") %>% column_spec(4, width = "5em")%>% column_spec(5, width = "5em") %>% column_spec(6, width = "8em")
+  
+```
+
+```{r, cache = T}
+library(raster)
+library(sf)
+library(tidyverse)
+BetaNames <-  list.files(pattern = "Beta_") %>% str_remove_all("Beta_") %>% str_remove_all(".rds")
+
+Betas <- list.files(pattern = "Beta_") %>% purrr::map(readRDS) %>% purrr::map(~.x[[7]]) %>% reduce(stack)
+
+
+names(Betas) <- BetaNames
+
+Betas_DF <- Betas %>% as("SpatialPixelsDataFrame") %>% as.data.frame()
+
+colnames(Betas_DF)[1:21] <- BetaNames
+
+Betas_DF <- Betas_DF %>% pivot_longer(contains("kybp"), names_to = "interval", values_to = "Beta_diversity") %>% dplyr::filter(!is.na(Beta_diversity))
+
+ggplot(data = Betas_DF, aes(x = interval, y = Beta_diversity)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  theme_bw()
+```
+
+
+# References
